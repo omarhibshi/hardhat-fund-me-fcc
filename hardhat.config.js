@@ -38,7 +38,7 @@ module.exports = {
             chainId: 11155111,
             blockConfirmations: 6,
         },
-        localHost: {
+        localhost: {
             url: LOCALHOST_RPC_URL,
             chainId: 31337,
         },
