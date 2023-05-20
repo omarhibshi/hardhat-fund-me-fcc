@@ -110,6 +110,7 @@ contract FundMe {
     }
 
     function getOwner() public view returns (address) {
+        console.log("Contract's owner ");
         return i_owner;
     }
 
@@ -124,6 +125,7 @@ contract FundMe {
     }
 
     function getPriceFeed() public view returns (AggregatorV3Interface) {
+        console.log("Contract's pricefeed ");
         return s_priceFeed;
     }
 }

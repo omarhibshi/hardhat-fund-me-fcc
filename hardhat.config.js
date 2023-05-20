@@ -14,6 +14,8 @@ const OINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || "key"
 const SANAA_PRIVATE_KEY = process.env.SANAA_PRIVATE_KEY
 const MUSCAT_PRIVATE_KEY = process.env.MUSCAT_PRIVATE_KEY
 const PARIS_PRIVATE_KEY = process.env.PARIS_PRIVATE_KEY
+const ARAFAT_PRIVATE_KEY = process.env.ARAFAT_PRIVATE_KEY
+const SHOUAIB_PRIVATE_KEY = process.env.SHOUAIB_PRIVATE_KEY
 
 /** @type import('hardhat/config').HardhatUserConfig */
 /* module.exports = {
@@ -29,12 +31,7 @@ module.exports = {
     networks: {
         sepolia: {
             url: SEPOLIA_RPC_URL,
-            accounts: [
-                PRIVATE_KEY,
-                SANAA_PRIVATE_KEY,
-                MUSCAT_PRIVATE_KEY,
-                PARIS_PRIVATE_KEY,
-            ],
+            accounts: [ARAFAT_PRIVATE_KEY],
             chainId: 11155111,
             blockConfirmations: 6,
         },

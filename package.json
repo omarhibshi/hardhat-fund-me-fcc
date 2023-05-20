@@ -32,11 +32,11 @@
   "dependencies": {
     "ethers": "5.7.2"
   },
-  "scripts":{
+  "scripts": {
     "test": "yarn hardhat test",
     "test:staging": "yarn hardhat test --network sepolia",
-    "lint":"yarn solhint 'contracts/*.sol'",
-    "lint:fix":"yarn solhint 'contracts/*.sol' --fix",
+    "lint": "yarn solhint 'contracts/*.sol'",
+    "lint:fix": "yarn solhint 'contracts/*.sol' --fix",
     "format": "yarn prettier --write .",
     "coverage": "yarn hardhat coverage"
   }

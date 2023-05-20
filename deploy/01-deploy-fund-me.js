@@ -5,7 +5,8 @@ const {
     networkConfig,
     developementChains,
 } = require("../helper-hardhat-config")
-const { network, ethers } = require("hardhat")
+const { networks } = require("../hardhat.config")
+const { network, ethers, deployments } = require("hardhat")
 const { verify } = require("../utils/verify")
 
 /*
@@ -43,6 +44,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
     //const ethUsdPriceFeedAddress = networkConfig[chainId]["ethUsdPriceFeed"]
     let ethUsdPriceFeedAddress
+    let fundMeCont
 
     if (developementChains.includes(network.name)) {
         // here you just get the latest mock
@@ -67,8 +69,17 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         log: true,
         waitConfirmations: network.config.blockConfirmations || 1,
     })
+    //wait deployments.fixture(["all"])
+    fundMeCont = await ethers.getContract("FundMe", deployer)
     const accounts = await ethers.getSigners()
     log(`FundMe deployed at ${fundMe.address}`)
+    log(`FundMe deploying account : ${networks[network.name].accounts[0]}`)
+    log(`FundMe getOwner() ==> : ${await fundMeCont.getOwner()}`)
+    log(
+        `FundMe Balance ==> : ${ethers.utils.formatEther(
+            await fundMeCont.provider.getBalance(fundMe.address)
+        )}`
+    )
 
     if (
         !developementChains.includes(network.name) &&

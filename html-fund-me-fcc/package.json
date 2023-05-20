@@ -1,0 +1,11 @@
+{
+  "name": "html-fund-me-fcc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "ethers": "^6.0.0-beta-exports.16",
+    "prettier": "^2.8.8",
+    "rollup": "^3.22.0"
+  }
+}

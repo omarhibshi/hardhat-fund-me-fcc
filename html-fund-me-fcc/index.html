@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+
+    <body style="background-color: #150458">
+        <style>
+            h1 {
+                text-align: center;
+                color: rgb(162, 255, 0);
+                font-weight: 200;
+                font-size: xx-large;
+            }
+            h2 {
+                text-align: center;
+                color: rgb(255, 189, 47);
+                font-weight: 100;
+                font-size: xx-large;
+            }
+        </style>
+        <h1>Welcome to the of world of Blockhain & Web3</h1>
+        <h2>{Fund Me DApp}</h2>
+
+        <center>
+            <img
+                style="width: 15cm; height: 10cm; text-align: center"
+                ,
+                src="images/20230226_154901.jpg"
+                ,
+                class="center"
+            />
+
+            ><br /><br />
+            <script src="./index.js" type="module"></script>
+            <button id="connectButton" style="background-color: #3630a3">
+                <img
+                    style="
+                        width: 2.5cm;
+                        height: 1.5cm;
+                        text-align: center;
+                        background-color: #3630a3;
+                    "
+                    src="images/Metamask-Emblem-stright.png"
+                    alt="buttonpng"
+                    border="1"
+                />
+            </button>
+            ><br /><br />
+            <label
+                style="
+                    color: rgb(237, 240, 247);
+                    font-weight: 1000;
+                    font-size: medium;
+                "
+                d="statusLabel"
+                >ETH Amount</label
+            >
+            <input
+                id="ethAmount"
+                placeholder="0.1"
+                style="
+                    color: rgb(5, 33, 91);
+                    height: 38px;
+                    width: 70px;
+                    font-weight: 1000;
+                    font-size: medium;
+                "
+                d="statusLabel"
+            />
+            <button
+                id="fundButton"
+                style="
+                    background: #30a36b;
+                    color: white;
+                    height: 45px;
+                    width: 245px;
+                    font-size: large;
+                "
+            >
+                Fund</button
+            >
+            <button
+                id="balanceButton"
+                style="
+                    background: #30a36b;
+                    color: white;
+                    height: 45px;
+                    width: 245px;
+                    font-size: large;
+                "
+            >
+                get balance
+            </button>
+
+            <button
+                id="withdrawButton"
+                style="
+                    background: #30a36b;
+                    color: white;
+                    height: 45px;
+                    width: 245px;
+                    font-size: large;
+                "
+            >
+                withdraw balance</button
+            ><br /> ><br />
+            <label
+                id="statusLabel"
+                style="
+                    color: rgb(245, 143, 143);
+                    font-weight: 1000;
+                    font-size: x-large;
+                "
+                >Metamask not connected</label
+            ><br /> ><br />
+            <label
+            id="walletAddressLabel"
+            style="
+                color: rgb(85, 250, 40);
+                font-weight: 1000;
+                font-size:medium;
+            "
+            >Metamask not connected</label
+        ><br />
+        </center>
+    </body>
+</html>
