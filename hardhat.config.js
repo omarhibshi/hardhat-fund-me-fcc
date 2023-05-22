@@ -31,7 +31,13 @@ module.exports = {
     networks: {
         sepolia: {
             url: SEPOLIA_RPC_URL,
-            accounts: [ARAFAT_PRIVATE_KEY],
+            accounts: [
+                SHOUAIB_PRIVATE_KEY,
+                SANAA_PRIVATE_KEY,
+                MUSCAT_PRIVATE_KEY,
+                PARIS_PRIVATE_KEY,
+                ARAFAT_PRIVATE_KEY,
+            ],
             chainId: 11155111,
             blockConfirmations: 6,
         },

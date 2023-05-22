@@ -73,7 +73,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     fundMeCont = await ethers.getContract("FundMe", deployer)
     const accounts = await ethers.getSigners()
     log(`FundMe deployed at ${fundMe.address}`)
-    log(`FundMe deploying account : ${networks[network.name].accounts[0]}`)
+    log(`FundMe deploying account : ${networks[network.name].accounts[4]}`)
     log(`FundMe getOwner() ==> : ${await fundMeCont.getOwner()}`)
     log(
         `FundMe Balance ==> : ${ethers.utils.formatEther(

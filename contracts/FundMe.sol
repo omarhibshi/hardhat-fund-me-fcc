@@ -47,7 +47,7 @@ contract FundMe {
      */
 
     function fund() public payable {
-        console.log("Fund triggered ");
+        console.log("Fund triggered is");
 
         require(
             msg.value.getConversionRate(s_priceFeed) >= MINIMUM_USD,
@@ -110,7 +110,7 @@ contract FundMe {
     }
 
     function getOwner() public view returns (address) {
-        console.log("Contract's owner ");
+        console.log("Contract's owner is /");
         return i_owner;
     }
 
